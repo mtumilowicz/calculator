@@ -36,7 +36,8 @@ All classes that could be immutable are immutable.
 In `Main` class in `main` method we load (hardcoded) `*.txt` file 
 from resources (path: `src/main/resources/operations.txt` so to run 
 the program using console we have to replace the file with our own 
-and after compiling type just: `java Main`.
+and just type: `java Main` (remember to compile project at least once, 
+and to provide access to third-party libraries.).
 ## Third-party libraries
         <dependency>
             <groupId>com.google.guava</groupId>
