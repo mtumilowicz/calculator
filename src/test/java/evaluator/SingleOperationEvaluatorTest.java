@@ -43,4 +43,9 @@ public class SingleOperationEvaluatorTest {
         Assert.assertEquals(5,
                 SingleOperationEvaluator.eval(5, OperationFactory.getApply(5)));
     }
+
+    @Test(expected = ArithmeticException.class)
+    public void evalAddOverflow() { 
+        SingleOperationEvaluator.eval(Integer.MAX_VALUE, OperationFactory.getAdd(5));
+    }
 }
