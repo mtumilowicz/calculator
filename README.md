@@ -56,4 +56,3 @@ provide access to third-party libraries.).
             <artifactId>commons-lang3</artifactId>
             <version>3.6</version>
         </dependency>
-    </dependencies>
