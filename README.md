@@ -14,9 +14,9 @@ Each line contains only one above-mentioned action and a single `int`
 number. `APPLY` is used exactly once - in the last line of the file.  
 Precedence of arithmetic operations is ignored, in other words:  
 `ADD 10`  
-`ADD 5`
+`ADD 5`  
 `SUBTRACT 3`  
-`ADD 6`
+`ADD 6`  
 `MULTIPLY -1`  
 `SUBTRACT -1`  
 `DIVIDE 5`  
@@ -26,8 +26,7 @@ is evaluated to expression:
 
 
 ## Solution
-In case of bad input we throw different exceptions: 
-`IllegalArgumentException`.  
+In case of bad input we throw: `IllegalArgumentException`.  
 If during evaluation `int` is overflow - 
 we re-throw `ArithmeticException` (we use functions from `guava` to 
 evaluate operations on `ints` - they take care of overflowing).  
@@ -35,9 +34,9 @@ Test coverage for crucial elements.
 All classes that could be immutable are immutable.  
 In `Main` class in `main` method we load (hardcoded) `*.txt` file 
 from resources (path: `src/main/resources/operations.txt` so to run 
-the program using console we have to replace the file with our own 
-and just type: `java Main` (remember to compile project at least once, 
-and to provide access to third-party libraries.).
+the program using console we have to replace the file and just type: 
+`java Main` (remember to compile project at least once, and to 
+provide access to third-party libraries.).
 ## Third-party libraries
         <dependency>
             <groupId>com.google.guava</groupId>
