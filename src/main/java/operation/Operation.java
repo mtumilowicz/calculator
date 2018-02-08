@@ -1,7 +1,5 @@
 package operation;
 
-import com.google.common.math.IntMath;
-
 import java.util.Objects;
 
 /**
@@ -26,28 +24,7 @@ public final class Operation {
     }
 
     public final int eval(int eval) {
-        Integer result;
-        switch (type) {
-            case ADD:
-                result = IntMath.checkedAdd(eval, amount);
-                break;
-            case SUBTRACT:
-                result = IntMath.checkedSubtract(eval, amount);
-                break;
-            case MULTIPLY:
-                result = IntMath.checkedMultiply(eval, amount);
-                break;
-            case DIVIDE:
-                result = eval / amount;
-                break;
-            case APPLY:
-                result = amount;
-                break;
-            default:
-                throw new IllegalStateException("Type not supported: " + type);
-        }
-
-        return result;
+        return type.evaluate(eval, amount);
     }
 
     @Override
