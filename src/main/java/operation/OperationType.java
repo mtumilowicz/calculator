@@ -12,7 +12,7 @@ public enum OperationType {
     ADD(IntMath::checkedAdd), 
     SUBTRACT(IntMath::checkedSubtract), 
     MULTIPLY(IntMath::checkedMultiply), 
-    DIVIDE((x,y) -> IntMath.divide(x,y, RoundingMode.UNNECESSARY)), 
+    DIVIDE((x,y) -> IntMath.divide(x,y, RoundingMode.FLOOR)), 
     APPLY((x,y) -> y);
     
     private final IntBinaryOperator evalMethod;
