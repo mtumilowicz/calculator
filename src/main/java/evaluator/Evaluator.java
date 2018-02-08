@@ -30,7 +30,7 @@ public final class Evaluator {
 
         int eval = applyOperation.getAmount();
         while (!deque.isEmpty()) {
-            eval = SingleOperationEvaluator.eval(eval, deque.removeFirst());
+            eval = deque.removeFirst().eval(eval);
         }
 
         return eval;
