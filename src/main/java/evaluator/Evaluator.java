@@ -26,7 +26,7 @@ public final class Evaluator {
 
         Operation applyOperation = deque.removeLast();
         Preconditions.checkState(applyOperation.getType() == OperationType.APPLY, 
-                "Last operation have to be APPLY.");
+                "Last operation has to be APPLY.");
 
         int eval = applyOperation.getAmount();
         while (!deque.isEmpty()) {
