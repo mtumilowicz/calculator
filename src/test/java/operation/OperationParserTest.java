@@ -66,7 +66,7 @@ public class OperationParserTest {
 
     @Test
     public void parseAddLowercase() {
-        testOperationTypeAndValueFive(OperationType.ADD, OperationParser.parse("ADD 5"));
+        testOperationTypeAndValueFive(OperationType.ADD, OperationParser.parse("add 5"));
     }
 
     @Test
