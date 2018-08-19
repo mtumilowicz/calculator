@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/calculator.svg?branch=master)](https://travis-ci.com/mtumilowicz/calculator)
 # calculator
 Project created for company from Warsaw during the process of 
 recruitment. It is a simple implementation of basic methods of 
